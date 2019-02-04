@@ -30,40 +30,55 @@
       <li class="breadcrumbs__current-link">Средства для ухода</li>
     </ul>
     <section class="filters">
-      <h2>Фильтр товаров</h2>
-      <form action="/echo" method="post">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Производители:</legend>
-          <input type="checkbox" name="baxter-of-california" id="baxter-of-california-field" checked="">
-          <label for="baxter-of-california-field">Baxter of California</label>
-          <br>
-          <input type="checkbox" name="mr-natty" id="mr-natty-field">
-          <label for="mr-natty-field">Mr Natty</label>
-          <br>
-          <input type="checkbox" name="suavecito" id="suavecito-field" checked="" disabled="">
-          <label for="suavecito-field">Suavecito</label>
-          <br>
-          <input type="checkbox" name="malin-goetz" id="malin-goetz-field">
-          <label for="malin-goetz-field">Malin+Goetz</label>
-          <br>
-          <input type="checkbox" name="murrays" id="murrays-field">
-          <label for="murrays-field">Murray′s</label>
-          <br>
-          <input type="checkbox" name="american-crew" id="american-crew-field" checked="">
-          <label for="american-crew-field">American crew</label>
+          <ul>
+            <li class="filter__option">
+              <input type="checkbox" name="baxter-of-california" id="baxter-of-california-field" checked="">
+              <label for="baxter-of-california-field">Baxter of California</label>
+            </li>
+            <li class="filter__option">
+              <input type="checkbox" name="mr-natty" id="mr-natty-field">
+              <label for="mr-natty-field">Mr Natty</label>
+            </li>
+            <li class="filter__option">
+              <input type="checkbox" name="suavecito" id="suavecito-field" checked="">
+              <label for="suavecito-field">Suavecito</label>
+            </li>
+            <li class="filter__option">
+              <input type="checkbox" name="malin-goetz" id="malin-goetz-field">
+              <label for="malin-goetz-field">Malin+Goetz</label>
+            </li>
+            <li class="filter__option">
+              <input type="checkbox" name="murrays" id="murrays-field">
+              <label for="murrays-field">Murray′s</label>
+            </li>
+            <li class="filter__option">
+              <input type="checkbox" name="american-crew" id="american-crew-field" checked="">
+              <label for="american-crew-field">American crew</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>Группы товаров:</legend>
-          <input type="radio" name="product-type" value="shaving" id="shaving-field">
-          <label for="shaving-field">Бритвенные принадлежности</label>
-          <br>
-          <input type="radio" name="product-type" value="care" id="care-field" checked="">
-          <label for="care-field">Средства для ухода</label>
-          <br>
-          <input type="radio" name="product-type" value="accessories" id="accessories-field" checked="" disabled="">
-          <label for="accessories-field">Аксессуары</label>
+          <ul>
+            <li class="filter__option">
+              <input type="radio" name="product-type" value="shaving" id="shaving-field">
+              <label for="shaving-field">Бритвенные принадлежности</label>
+            </li>
+            <li class="filter__option">
+              <input type="radio" name="product-type" value="care" id="care-field" checked="">
+              <label for="care-field">Средства для ухода</label>
+            </li>
+            <li class="filter__option">
+              <input type="radio" name="product-type" value="accessories" id="accessories-field">
+              <label for="accessories-field">Аксессуары</label>
+            </li>
+          </ul>
         </fieldset>
-        <button class="btn" type="submit">Показать</button>
+        <button class="btn filter__btn" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog">
