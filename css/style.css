@@ -28,7 +28,8 @@ a {
 }
 
 .main-nav__site-nav,
-.main-nav__user-nav {
+.main-nav__user-nav,
+.features__list {
   list-style: none;
 }
 
@@ -42,4 +43,14 @@ a {
 .main-nav__user-nav a:hover,
 .main-nav__user-nav a:focus {
   background-color: #242424;
+}
+
+.features__item {
+  text-align: center;
+}
+
+.features__item h3 {
+  font-size: 30px;
+  line-height: 42px;
+  color: #f7f4f1;
 }
