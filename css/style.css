@@ -48,7 +48,11 @@ a {
 .main-nav__user-nav,
 .features__list,
 .news__list,
-.footer__social ul {
+.footer__social ul,
+.breadcrumbs,
+.filter ul,
+.catalog__list,
+.pagination-list {
   list-style: none;
 }
 
@@ -190,3 +194,102 @@ a {
 .restore:focus {
   text-decoration: none;
 }
+
+.inner-page {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/texture-bg.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs a {
+  color: #000000;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs__current-link {
+  color: #aba9a7;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+.filter ul {
+  line-height: 18px;
+}
+
+.filter__option input:hover + label,
+.filter__option input:focus + label {
+  color: #663d15;
+}
+
+.filter__option input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.catalog-item {
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item a {
+  color: #000000;
+}
+
+.catalog-item h3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-item__category {
+  text-transform: none;
+}
+
+.catalog-item__price b {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.catalog-item__price .btn {
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-item a:active {
+  background-color: #663d15;
+}
+
+.pagination-item--current a,
+.pagination-item--current a:hover,
+.pagination-item--current a:focus,
+.pagination-item--current a:active {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
