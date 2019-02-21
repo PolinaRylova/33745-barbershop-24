@@ -29,7 +29,8 @@ a {
 
 .main-nav__site-nav,
 .main-nav__user-nav,
-.features__list {
+.features__list,
+.news__list {
   list-style: none;
 }
 
@@ -54,3 +55,57 @@ a {
   line-height: 42px;
   color: #f7f4f1;
 }
+
+.index-columns {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/texture-bg.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news__item time {
+  text-transform: none;
+}
+
+.gallery__content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.gallery__btn {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+}
+
+.gallery__btn:hover,
+.gallery__btn:focus,
+.gallery__btn:active {
+  background-color: #663d15;
+  outline: none;
+}
+
+.appointment__item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment__item input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
