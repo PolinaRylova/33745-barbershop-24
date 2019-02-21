@@ -30,7 +30,8 @@ a {
 .main-nav__site-nav,
 .main-nav__user-nav,
 .features__list,
-.news__list {
+.news__list,
+.footer__social ul {
   list-style: none;
 }
 
@@ -109,3 +110,46 @@ a {
   outline: none;
 }
 
+.main-footer {
+  color: #ffffff;
+
+  background-color: #212121;
+  background-image: url("../img/footer-bg.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer__contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer__contacts a:hover,
+.footer__contacts a:focus {
+  text-decoration: none;
+}
+
+.footer__social {
+  text-align: center;
+}
+
+.social-btn {
+  color: #ffffff;
+}
+
+.footer__copyright {
+  text-align: center;
+}
+
+.footer__copyright .btn {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.footer__copyright .btn:hover,
+.footer__copyright .btn:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+}
