@@ -9,14 +9,31 @@ body {
   text-transform: uppercase;
 
   background-color: #000000;
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/index-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
-
 a {
   text-decoration: none;
+}
+
+.btn {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background-color: #663d15;
+  outline: none;
 }
 
 .main-nav {
@@ -80,28 +97,10 @@ a {
   border: 7px solid #ffffff;
 }
 
-.gallery__btn {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #000000;
-  border: none;
-}
-
-.gallery__btn:hover,
-.gallery__btn:focus,
-.gallery__btn:active {
-  background-color: #663d15;
-  outline: none;
-}
-
 .appointment__item input {
   font: inherit;
 
-  background-color: transparent;
+  background-color: #f9f6f3;
   border: 2px solid #000000;
 }
 
@@ -141,15 +140,53 @@ a {
   text-align: center;
 }
 
-.footer__copyright .btn {
-  color: #ffffff;
-
-  background-color: #000000;
-}
-
-.footer__copyright .btn:hover,
-.footer__copyright .btn:focus {
+.footer__copyright .copyright__btn:hover,
+.footer__copyright .copyright__btn:focus {
   color: #000000;
 
   background-color: #ffffff;
+}
+
+.modal {
+  color: #000000;
+
+  background-color: #f8f5f2;
+  background-image: url("../img/texture-bg.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login__form input[type="text"],
+.login__form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login__form input:focus {
+  border-color: #663d15;
+  outline: none;
+}
+
+.login__checkbox:hover,
+.login__checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
 }
